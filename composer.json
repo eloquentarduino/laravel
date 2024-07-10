@@ -7,7 +7,17 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.9",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "guzzlehttp/guzzle": "^7.8",
+        "laravel/sanctum": "^4.0",
+        "livewire/livewire": "^3.5",
+        "lorisleiva/laravel-actions": "^2.8",
+        "ryangjchandler/computed-properties": "^0.2.0",
+        "saloonphp/laravel-plugin": "^3.0",
+        "saloonphp/saloon": "^3.0",
+        "spatie/temporary-directory": "^2.2",
+        "symfony/dom-crawler": "^7.1",
+        "symfony/process": "^7.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -15,7 +25,12 @@
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
-        "phpunit/phpunit": "^11.0.1"
+        "phpunit/phpunit": "^11.0.1",
+        "barryvdh/laravel-debugbar": "^3.13",
+        "laravel/telescope": "^5.1",
+        "pestphp/pest": "^2.34",
+        "pestphp/pest-plugin-laravel": "^2.4",
+        "phpstan/phpstan": "^1.11"
     },
     "autoload": {
         "psr-4": {
