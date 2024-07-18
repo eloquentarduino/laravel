@@ -8,6 +8,7 @@
     "pest": "vendor/bin/pest",
     "switch": "git commit -m 'switching' --allow-empty && git checkout main && git merge -X theirs -m 'merge' dev",
     "push": "git push origin $(git rev-parse --abbrev-ref HEAD) -f && git checkout dev",
+    "push:prod": "yarn push && yarn switch && yarn push",
     "deploy": "yarn pint && yarn pest && yarn build && yarn push",
     "deploy:prod": "yarn deploy && yarn switch && yarn push"
   },
@@ -19,9 +20,14 @@
   "dependencies": {
     "@preact/signals": "^1.2.3",
     "@preact/signals-react": "^2.0.2",
+    "@shufo/prettier-plugin-blade": "^1.14.1",
     "@tauri-apps/api": "^1.5.6",
     "@vitejs/plugin-react": "^4.3.1",
+    "alpinejs": "^3.14.1",
     "autoprefixer": "^10.4.19",
+    "dropzone": "^6.0.0-beta.2",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
     "postcss": "^8.4.39",
     "postcss-cli": "^11.0.0",
     "prettier": "^3.3.2",
